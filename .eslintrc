@@ -1,0 +1,18 @@
+{
+  "extends": ["taro"],
+  "rules": {
+    "sort-imports": [2, { "ignoreDeclarationSort": true }],
+    "eqeqeq": ["error", "always", { "null": "ignore" }],
+    "no-unused-vars": 0,
+    "react/sort-comp": 0,
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".tsx"] }]
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "useJSXTextNode": true,
+    "project": "./tsconfig.json"
+  }
+}
